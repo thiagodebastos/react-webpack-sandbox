@@ -8,10 +8,10 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
-import React, { PropTypes } from 'react'
-import Layout from '../../components/Layout'
-import s from './styles.css'
-import { title, html } from './index.md'
+import React, { PropTypes } from "react";
+import Layout from "../../components/Layout";
+import s from "./styles.css";
+import { title, html } from "./index.md";
 
 class HomePage extends React.Component {
   static propTypes = {
@@ -22,10 +22,10 @@ class HomePage extends React.Component {
         author: PropTypes.string.isRequired
       }).isRequired
     ).isRequired
-  }
+  };
 
   componentDidMount() {
-    document.title = title
+    document.title = title;
   }
 
   render() {
@@ -36,8 +36,8 @@ class HomePage extends React.Component {
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </Layout>
-    )
+    );
   }
 }
 
-export default HomePage
+export default HomePage;
